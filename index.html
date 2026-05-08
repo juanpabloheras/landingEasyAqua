@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,75 +9,159 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <nav class="navbar">
-        <li><img src="Imagotipo.png" alt="EasyAqua" class="logo-nav"></li>
+        <a href="#inicio" class="nav-brand">
+            <img src="Imagotipo.png" alt="EasyAqua" class="logo-nav">
+        </a>
+
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#solucion">Solución</a></li>
+            <li><a href="#funciona">Cómo funciona</a></li>
         </ul>
-        <button class="btn-info"> Solicitar información</button>
+
+        <a href="#contacto" class="btn-info">Solicitar información</a>
     </nav>
-    <header>
+
+    <header id="inicio" class="hero">
         <div class="datos-header">
-            <div class="water-management">
-                Manejo Smart del agua
-            </div>
+            <div class="water-management">Smart Water Management</div>
 
+            <h1>Controla el agua <br> de tu hogar <br> desde tu celular</h1>
 
-            <h1> Controla el agua <br> de tu hogar <br> desde tu celular</h1>
-            <p>Detecta fugas, monitorea el consumo y corta el flujo de agua para evitar desperdicios y ahorrar dinero
-            </p>
+            <p>Detecta fugas, monitorea el consumo y corta el flujo de agua por zonas para evitar desperdicios y ahorrar dinero.</p>
 
             <div class="btns-header">
-                <button class="conoce-mas">
-                    Conocer más
-                </button>
-                <button class="demo">
-                    ▶︎ Ver demo
-                </button>
+                <a href="#solucion" class="conoce-mas">Conocer más</a>
+                <a href="#funciona" class="demo">▶ Ver demo</a>
             </div>
-
         </div>
-
-
-
     </header>
-    
-    <main>
-        <h2 class="main-subheader">¿Tu recibo de agua llegó alto y no sabes por qué?</h2>
 
-        <div class="contras">
-            <div class="contra">
-                <img src="svg/drop.svg" alt="dropimage">
-                <h4>Fugas invisibles</h4>
-                <p>Las fugas pueden pasar desapercibidas durante semanas o meses.</p>
+    <main>
+        <section id="problema" class="section problema-section">
+            <h2 class="main-subheader">¿Tu recibo de agua llegó alto y no sabes por qué?</h2>
+
+            <div class="contras">
+                <div class="contra">
+                    <img src="svg/drop.svg" alt="Gota de agua">
+                    <h4>Fugas invisibles</h4>
+                    <p>Las fugas pueden pasar desapercibidas durante semanas o meses.</p>
+                </div>
+
+                <div class="contra">
+                    <img src="svg/money.svg" alt="Dinero">
+                    <h4>Desperdicio diario</h4>
+                    <p>El agua que desperdicias cada día es dinero perdido cada mes.</p>
+                </div>
+
+                <div class="contra">
+                    <img src="svg/bar.svg" alt="Gráfica">
+                    <h4>Falta de control</h4>
+                    <p>Sin información, es imposible saber dónde y cuánto se está consumiendo.</p>
+                </div>
+
+                <div class="contra">
+                    <img src="svg/bill.svg" alt="Recibo">
+                    <h4>Consumo excesivo</h4>
+                    <p>Un consumo elevado afecta tu bolsillo y al medio ambiente.</p>
+                </div>
             </div>
-            <div class="contra">
-                <img src="svg/money.svg" alt="money">
-                <h4>Desperdicio diario</h4>
-                <p>El auga que desperdicias cada día es dinero perdido cada mes.</p>
+
+            <div class="dato-agua">
+                <img src="svg/drop.svg" alt="Gota">
+                <p>Hasta el <strong>30%</strong> del agua puede desperdiciarse por fugas no detectadas.</p>
             </div>
-            <div class="contra">
-                <img src="svg/bar.svg" alt="bar">
-                <h4>Falta de control</h4>
-                <p>Sin información, es imposible saber dónde y cuánto se está consumiendo.</p>
+        </section>
+
+        <section id="solucion" class="section solucion">
+            <div class="titulo-solucion">
+                <h2>La solución: <span>Easy Aqua</span></h2>
+                <p>Una forma sencilla de segmentar, medir y controlar el flujo de agua en tu hogar.</p>
             </div>
-            <div class="contra">
-                <img src="svg/bill.svg" alt="bill">
-                <h4>Consumo excesivo</h4>
-                <p>Un consumo elevado afecta tu bolsillo y al medio ambiente.</p>
+
+            <div class="ventajas">
+                <div class="ventaja">
+                    <div class="header-ventaja">
+                        <img src="svg/pipe.svg" alt="Tubería">
+                        <h4>Segmentación inteligente</h4>
+                    </div>
+                    <p>Divide tu red de agua por zonas como baño, cocina, lavandería o jardín.</p>
+                </div>
+
+                <div class="ventaja">
+                    <div class="header-ventaja">
+                        <img src="svg/chart.svg" alt="Monitoreo">
+                        <h4>Monitoreo en tiempo real</h4>
+                    </div>
+                    <p>Consulta el consumo de agua de cada zona desde una interfaz clara.</p>
+                </div>
+
+                <div class="ventaja">
+                    <div class="header-ventaja">
+                        <img src="svg/lock.svg" alt="Candado">
+                        <h4>Corte remoto</h4>
+                    </div>
+                    <p>Bloquea el flujo inmediatamente si detectas una fuga o uso anormal.</p>
+                </div>
+
+                <div class="ventaja">
+                    <div class="header-ventaja">
+                        <img src="svg/bill.svg" alt="Alerta">
+                        <h4>Alertas inteligentes</h4>
+                    </div>
+                    <p>Recibe avisos cuando una zona tenga consumo continuo o sospechoso.</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="funciona" class="section funciona-section">
+            <h2>¿Cómo funciona?</h2>
+
+            <div class="pasos">
+                <div class="paso">
+                    <span>1</span>
+                    <h4>Instala EasyAqua</h4>
+                    <p>Coloca el dispositivo en las tuberías de las zonas que deseas controlar.</p>
+                </div>
+
+                <div class="paso">
+                    <span>2</span>
+                    <h4>Vincula tus zonas</h4>
+                    <p>Registra baño, cocina, patio, lavandería o cualquier área desde la app.</p>
+                </div>
+
+                <div class="paso">
+                    <span>3</span>
+                    <h4>Monitorea el consumo</h4>
+                    <p>Visualiza cuánto se consume por zona y detecta comportamientos raros.</p>
+                </div>
+
+                <div class="paso">
+                    <span>4</span>
+                    <h4>Corta el flujo</h4>
+                    <p>Activa o bloquea el paso del agua cuando necesites prevenir desperdicio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="cta-section">
+            <div class="cta-content">
+                <h2>Empieza a ahorrar agua hoy.</h2>
+                <p>EasyAqua está pensado para hogares que quieren detectar fugas, ahorrar dinero y cuidar el agua.</p>
+                <a href="mailto:contacto@easyaqua.com" class="cta-button">Solicitar información</a>
+            </div>
+        </section>
     </main>
 
+    <footer>
+        <p>© 2026 EasyAqua. Smart Water Management.</p>
+    </footer>
 </body>
 
 </html>
